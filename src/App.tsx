@@ -128,6 +128,53 @@ function App() {
         </div>
       </section>
 
+      <section className="py-20 bg-gray-900">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="space-y-6"
+            >
+              <h2 className="text-4xl font-bold text-white">Nathaniel Liam Hunter</h2>
+              <p className="text-xl text-blue-400">Global Contractor in Art and Oil Rig Development</p>
+              <p className="text-gray-400">Master's Degree, Columbian College of Arts & Sciences</p>
+              
+              <div className="space-y-4 text-gray-300">
+                <p>As a global contractor with a diverse and multidisciplinary focus, I specialize in blending creativity and industry. With a Master's degree from the prestigious Columbian College of Arts & Sciences, I bring an innovative perspective to two seemingly contrasting fields: art and oil rigs.</p>
+                
+                <h3 className="text-2xl font-bold text-white mt-8">Core Expertise</h3>
+                <ul className="list-disc pl-5 space-y-2">
+                  <li>Art Consultation and Development</li>
+                  <li>Oil Rig Construction and Management</li>
+                  <li>Project Fusion</li>
+                </ul>
+
+                <h3 className="text-2xl font-bold text-white mt-8">Vision</h3>
+                <p>I believe the intersection of art and industry holds untapped potential to inspire progress and innovation. By merging artistic creativity with industrial precision, I aim to redefine how we perceive and interact with functional infrastructure in global contexts.</p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="relative"
+            >
+              <div className="relative aspect-[3/4] overflow-hidden rounded-xl">
+                <img 
+                  src="https://res.cloudinary.com/dpce4yc14/image/upload/v1736783765/IMG-20250113-WA0006_qswapn.jpg"
+                  alt="Nathaniel Liam Hunter"
+                  className="object-cover w-full h-full rounded-xl"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
